@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/feed_update_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/feed_update_top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/feed_update_profile_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    app:civ_border_color="@color/lightGrey"
+                    app:civ_border_width=".5dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_toEndOf="@id/feed_update_profile_image">
+
+                    <TextView
+                        android:id="@+id/feed_update_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="sans-serif"
+                        android:text="melaniegoetz"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/grayText" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/feed_update_user_name">
+
+                        <ImageView
+                            android:id="@+id/location_button"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/location" />
+
+                        <TextView
+                            android:id="@+id/feed_update_user_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/location_button"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Perkins Library"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="#172CDA" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/feed_update_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feed_update_top_bar" />
+
+            <TextView
+                android:id="@+id/social_attendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feed_update_image"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="No one is currently attending" />
+
+            <TextView
+                android:id="@+id/feed_update_time_stamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/social_attendance"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="time"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/feed_update_user_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/social_attendance"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="               Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feed_update_user_text">
+
+
+                <RelativeLayout
+                    android:id="@+id/feed_update_coming_button_inactive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/inactivedevilheart" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="33dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Coming?"
+                        android:textColor="#B9BEC6" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/feed_update_coming_button_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/activedevilheart" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="33dp"
+                        android:text="I'm Coming!"
+                        android:textColor="#172CDA" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

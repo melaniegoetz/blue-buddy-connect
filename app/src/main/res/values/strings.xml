@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">BlueBuddy</string>
+    <string name="facebook_app_id">222868814857250</string>
+
+    <string-array name="LocationsToChoose">
+        <item>Allen</item>
+        <item>Alspaugh</item>
+        <item>Ambler Stadium</item>
+        <item>Arts Annex</item>
+        <item>Baldwin</item>
+        <item>Bassett</item>
+        <item>Belltower</item>
+        <item>Belmont</item>
+        <item>Berkshire Main</item>
+        <item>Berkshire Ninth</item>
+        <item>Biddle</item>
+        <item>BioSci</item>
+        <item>Blackwell</item>
+        <item>Bostock</item>
+        <item>Brodie Gym</item>
+        <item>Brown</item>
+        <item>Bryan Center</item>
+        <item>Cameron Indoor</item>
+        <item>Carr</item>
+        <item>Central Campus Apts Between Anderson and Alexander</item>
+        <item>Central Campus Apts Between Flowers and Anderson</item>
+        <item>Central Campus Apts Swift</item>
+        <item>Chapel</item>
+        <item>CIEMAS</item>
+        <item>Craven Quad</item>
+        <item>Crowell</item>
+        <item>Crowell Quad</item>
+        <item>Divinity</item>
+        <item>East</item>
+        <item>East Duke</item>
+        <item>Edens</item>
+        <item>Epworth</item>
+        <item>Few Quad</item>
+        <item>Franklin Center</item>
+        <item>French Family Science Center</item>
+        <item>Friedl</item>
+        <item>Fuqua</item>
+        <item>Gilbert-Addoms</item>
+        <item>Giles</item>
+        <item>Gross Hall</item>
+        <item>Hudson Hall</item>
+        <item>Jack Coombs Field</item>
+        <item>Jarvis</item>
+        <item>Keohane</item>
+        <item>Kilgo Quad</item>
+        <item>Koskinen Stadium</item>
+        <item>Languages</item>
+        <item>Law School</item>
+        <item>Lilly Library</item>
+        <item>LSRC</item>
+        <item>Marketplace</item>
+        <item>Math and Physics</item>
+        <item>Nasher</item>
+        <item>Old Chem</item>
+        <item>Page</item>
+        <item>Pegram</item>
+        <item>Perkins</item>
+        <item>Randolph</item>
+        <item>Rubenstein</item>
+        <item>Sanford</item>
+        <item>Sheffield</item>
+        <item>Shooters</item>
+        <item>Smith Warehouse</item>
+        <item>SocPsych</item>
+        <item>SocSci</item>
+        <item>Southgate</item>
+        <item>Swift</item>
+        <item>Teer</item>
+        <item>Tower</item>
+        <item>Trinity Commons</item>
+        <item>Wallace Wade</item>
+        <item>Wannamaker</item>
+        <item>Washington Duke Inn</item>
+        <item>West Duke</item>
+        <item>West Union</item>
+        <item>White</item>
+        <item>Wilson</item>
+        <item>Wilson Rec</item>
+        <item>Craven Quad</item>
+    </string-array>
+
+
+    <string-array name="TimesToChoose">
+        <item>1AM</item>
+        <item>2AM</item>
+        <item>3AM</item>
+        <item>4AM</item>
+        <item>5AM</item>
+        <item>6AM</item>
+        <item>7AM</item>
+        <item>8AM</item>
+        <item>9AM</item>
+        <item>10AM</item>
+        <item>11AM</item>
+        <item>12PM</item>
+        <item>1PM</item>
+        <item>2PM</item>
+        <item>3PM</item>
+        <item>4PM</item>
+        <item>5PM</item>
+        <item>6PM</item>
+        <item>7PM</item>
+        <item>8PM</item>
+        <item>9PM</item>
+        <item>10PM</item>
+        <item>11PM</item>
+        <item>12AM</item>
+    </string-array>
+</resources>

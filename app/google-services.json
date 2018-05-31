@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "571598788171",
+    "firebase_url": "https://coconut-7cc75.firebaseio.com",
+    "project_id": "coconut-7cc75",
+    "storage_bucket": "coconut-7cc75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571598788171:android:c2e9caf1a262bac6",
+        "android_client_info": {
+          "package_name": "compsci290.edu.duke.coconutproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571598788171-2ue4f0f9dd78h445iihedga78ovm7guv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEqZkV4DA82RigmfiLHzyvCHoi0BtVyo4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="compsci290.edu.duke.coconutproject.activities.CreateEventActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#172CDA">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/bluebuddy_logo"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/post_my_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingRight="8dp"
+                android:textSize="16dp"
+                android:textColor="@color/whiteText"
+                android:layout_centerVertical="true"
+                android:text="POST"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/create_event_back_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_centerVertical="true"
+                android:paddingStart="4dp"
+                android:src="@drawable/back"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/create_new_event_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Create Event"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/lightGrey"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/wherewillube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:paddingRight="4dp"
+                    android:text="Where at?"
+                    android:textColor="@color/grayText"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/location_spinner"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="fill_parent"
+                    android:background="@color/textBoxColor"
+                    android:spinnerMode="dialog"
+                    android:layout_height="35dp"
+                    android:layout_toEndOf="@id/wherewillube">
+
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:id="@+id/whenwillibe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:paddingRight="4dp"
+                    android:text="When?"
+                    android:textColor="@color/grayText"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/location_spinner_time"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="fill_parent"
+                    android:background="@color/textBoxColor"
+                    android:spinnerMode="dialog"
+                    android:layout_height="35dp"
+                    android:layout_toEndOf="@id/whenwillibe">
+
+                </Spinner>
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/textBoxColor"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_margin="5dp"
+                android:hint="What are you up to today?"
+                android:inputType="text"
+                android:selectAllOnFocus="true"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grayText"
+                android:textColorHint="@color/lightGrey"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/camera_photo_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/whiteText"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Take a photo" />
+            <Button
+                android:id="@+id/upload_a_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/whiteText"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Upload from library" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/user_image_upload_preview"
+                    android:scaleType="fitStart"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:visibility="gone"
+                    android:src="@drawable/delete"
+                    android:id="@+id/delete_image_button"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentEnd="true"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
