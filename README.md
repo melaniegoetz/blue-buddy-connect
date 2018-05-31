@@ -1,4 +1,4 @@
-# Blue Buddy ([Check out our website!](https://blue-buddy.squarespace.com/?r=66221890))
+# Blue Connect ([Check out our website!](https://blue-buddy.squarespace.com/?r=66221890))
 
 This app is a final project for CS290-03 Mobile Software Development. The main application Coconut is a mobile app supported by [Firebase backend](https://firebase.google.com/). User authentication is supported by Firebase Facebook Authentication API, and Google Maps API was used to support user/meeting location display and updates.
 
