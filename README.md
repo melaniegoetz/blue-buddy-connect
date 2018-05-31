@@ -1,14 +1,13 @@
 # Blue Connect ([Check out our website!](https://blue-buddy.squarespace.com/?r=66221890))
 
-This app is a final project for CS290-03 Mobile Software Development. The main application Coconut is a mobile app supported by [Firebase backend](https://firebase.google.com/). User authentication is supported by Firebase Facebook Authentication API, and Google Maps API was used to support user/meeting location display and updates.
+A location-based Android app for Duke students to create and attend meetups, post ephemeral photos of events, and view when friends are located at popular on-campus locations.
+
+The main application BlueConnect is a mobile app supported by [Firebase backend](https://firebase.google.com/). User authentication is supported by Firebase Facebook Authentication API, and Google Maps API was used to support user/meeting location display and updates.
 
 
 ## Project Structure:
 
 Everything you are looking to modify can be found in Coconut/app/src/main directory.
-
-
-
 
 
 ###   Activities:
